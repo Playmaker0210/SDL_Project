@@ -1,0 +1,159 @@
+# depslib dependency file v1.0
+1648743955 source:d:\game master\sdlgame\generalfunc.cpp
+	"GeneralFunc.h"
+
+1648748998 d:\game master\sdlgame\generalfunc.h
+	<windows.h>
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1648749224 source:d:\game master\sdlgame\main.cpp
+	<iostream>
+	"GeneralFunc.h"
+	"BaseObj.h"
+
+1648748998 source:d:\game master\sdlgame\baseobj.cpp
+	"BaseObj.h"
+
+1648745560 d:\game master\sdlgame\baseobj.h
+	"GeneralFunc.h"
+
+1648748998 source:d:\game master\gamesdl2\baseobj.cpp
+	"BaseObj.h"
+
+1648745560 d:\game master\gamesdl2\baseobj.h
+	"GeneralFunc.h"
+
+1648748998 d:\game master\gamesdl2\generalfunc.h
+	<windows.h>
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1648743955 source:d:\game master\gamesdl2\generalfunc.cpp
+	"GeneralFunc.h"
+
+1648749224 source:d:\game master\gamesdl2\main.cpp
+	<iostream>
+	"GeneralFunc.h"
+	"BaseObj.h"
+
+1650643293 source:d:\game master\gamesdl\baseobj.cpp
+	"BaseObj.h"
+
+1652863435 d:\game master\gamesdl\baseobj.h
+	"GeneralFunc.h"
+
+1652863352 d:\game master\gamesdl\generalfunc.h
+	<windows.h>
+	<bits/stdc++.h>
+	<SDL.h>
+	<SDL_image.h>
+	<SDL_mixer.h>
+	<SDL_ttf.h>
+
+1652541152 source:d:\game master\gamesdl\generalfunc.cpp
+	"GeneralFunc.h"
+
+1652869511 source:d:\game master\gamesdl\main.cpp
+	"GeneralFunc.h"
+	"BaseObj.h"
+	"GameMap.h"
+	"Player.h"
+	"Timer.h"
+	"Threats.h"
+	"Explosion.h"
+	"Text.h"
+	"PlayerStat.h"
+	"Draw.h"
+	"Boss.h"
+	"Menu.h"
+
+1652862746 source:d:\game master\gamesdl\gamemap.cpp
+	"GameMap.h"
+	"GeneralFunc.h"
+
+1652863258 d:\game master\gamesdl\gamemap.h
+	"GeneralFunc.h"
+	"BaseObj.h"
+
+1652863385 d:\game master\gamesdl\player.h
+	"GeneralFunc.h"
+	"BaseObj.h"
+	"Bullet.h"
+	"Menu.h"
+
+1652861546 source:d:\game master\gamesdl\player.cpp
+	"Player.h"
+	"GameMap.h"
+
+1649944645 source:d:\game master\gamesdl\timer.cpp
+	"Timer.h"
+	"GeneralFunc.h"
+
+1649944631 d:\game master\gamesdl\timer.h
+
+1652706277 source:d:\game master\gamesdl\bullet.cpp
+	"Bullet.h"
+
+1652706278 d:\game master\gamesdl\bullet.h
+	"GeneralFunc.h"
+	"BaseObj.h"
+
+1652856169 source:d:\game master\gamesdl\threats.cpp
+	"Threats.h"
+
+1652863452 d:\game master\gamesdl\threats.h
+	"GeneralFunc.h"
+	"BaseObj.h"
+	"Bullet.h"
+	"Player.h"
+
+1652117646 source:d:\game master\gamesdl\explosion.cpp
+	"Explosion.h"
+
+1652863248 d:\game master\gamesdl\explosion.h
+	"BaseObj.h"
+
+1652863424 d:\game master\gamesdl\text.h
+	"GeneralFunc.h"
+	"BaseObj.h"
+
+1652542287 source:d:\game master\gamesdl\text.cpp
+	"Text.h"
+
+1652798112 source:d:\game master\gamesdl\playerstat.cpp
+	"PlayerStat.h"
+
+1652863431 d:\game master\gamesdl\playerstat.h
+	"GeneralFunc.h"
+	"BaseObj.h"
+
+1652275298 source:d:\game master\gamesdl\draw.cpp
+	"Draw.h"
+
+1652863206 d:\game master\gamesdl\draw.h
+	"GeneralFunc.h"
+
+1652801494 source:d:\game master\gamesdl\boss.cpp
+	"Boss.h"
+	"GameMap.h"
+
+1652863188 d:\game master\gamesdl\boss.h
+	"GeneralFunc.h"
+	"BaseObj.h"
+	"Bullet.h"
+
+1652863365 d:\game master\gamesdl\menu.h
+	"GeneralFunc.h"
+	"Text.h"
+	"BaseObj.h"
+
+1652868189 source:d:\game master\gamesdl\menu.cpp
+	"Menu.h"
+
