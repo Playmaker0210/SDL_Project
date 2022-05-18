@@ -33,6 +33,7 @@
 
 5. Kết luận:
 - Học SDL và lí thuyết Tile Map tại: http://lazyfoo.net/tutorials/SDL/39_tiling/index.php và https://phattrienphanmem123az.com/
+- Hình ảnh và âm thanh được lấy từ nhiều nguồn khác nhau và được chỉnh sửa để phù hợp với game, nhưng đa số hình ảnh được lấy từ: https://craftpix.net/
 - Code hoàn toàn là tự viết.
 - Thêm chức năng tắt âm thanh và chức năng Replay để chơi lại từ đầu.
 - Thêm hiệu ứng và cải thiện "trí thông minh" của Boss.
