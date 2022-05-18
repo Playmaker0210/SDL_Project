@@ -1,11 +1,11 @@
-Họ và tên: Nguyễn Mạnh Hùng
-MSV: 21020075
+- Họ và tên: Nguyễn Mạnh Hùng
+- MSV: 21020075
 
 1. MÔ TẢ CHUNG VỀ TRÒ CHƠI:
-Điều khiển nhân vật di chuyển bằng các phím mũi tên. Bấm phím P để tạm dừng trò chơi. Bấm phím Z để tấn công bằng lửa, tiêu tốn 15 mana. Bấm phím X để tấn công bằng nước, tiêu tốn 10 mana. Khởi đầu với 3 mạng, mỗi mạng có 100 HP và 150 mana. Tiêu diệt quái vật trên đường đi và lấy ngôi sao để dành chiến thắng.Có thể sử dụng các item trên đường đi để hỗ trợ.
+- Điều khiển nhân vật di chuyển bằng các phím mũi tên. Bấm phím P để tạm dừng trò chơi. Bấm phím Z để tấn công bằng lửa, tiêu tốn 15 mana. Bấm phím X để tấn công bằng nước, tiêu tốn 10 mana. Khởi đầu với 3 mạng, mỗi mạng có 100 HP và 150 mana. Tiêu diệt quái vật trên đường đi và lấy ngôi sao để dành chiến thắng.Có thể sử dụng các item trên đường đi để hỗ trợ.
 
 2. Ý TƯỞNG CHÍNH:
-Coi các đối tượng trong game( nhân vật chính, quái vật, đạn, các chướng ngại vật) là các hình chữ nhật trong hệ tọa độ Đề-các. Khi 2 hình chữ nhật đố tiếp xúc hay giao nhau thì hai đối tượng mà chúng đại diện va chạm với nhau. Bản đồ game bao gồm 400x10 tile, mỗi tile có kích thước 64px * 64px.
+- Coi các đối tượng trong game( nhân vật chính, quái vật, đạn, các chướng ngại vật) là các hình chữ nhật trong hệ tọa độ Đề-các. Khi 2 hình chữ nhật đố tiếp xúc hay giao nhau thì hai đối tượng mà chúng đại diện va chạm với nhau. Bản đồ game bao gồm 400x10 tile, mỗi tile có kích thước 64px * 64px.
 
 3. CÁC CHỨC NĂNG ĐÃ CÀI ĐẶT:
 - Menu game
