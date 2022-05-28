@@ -22,6 +22,9 @@ Player::Player()
     power_level_fire=1;
     power_level_water=1;
     playing=0;
+    shield=false;
+    book = false;
+    attack_bonus=0;
     g_sound_player[1]=Mix_LoadWAV("Sound//get_item.wav");
 }
 
@@ -528,11 +531,25 @@ void Player::ItemProcess(Map &data, int x_pos, int y_pos)
             Mix_PlayChannel(-1,g_sound_player[1],0);
         }
         break;
+    case SHIELD:
+        {
+            shield=true;
+            data.tile[y_pos][x_pos]=0;
+            Mix_PlayChannel(-1,g_sound_player[1],0);
+        }
+        break;
+    case BOOK:
+        {
+            book=true;
+            attack_bonus=100;
+            data.tile[y_pos][x_pos]=0;
+            Mix_PlayChannel(-1,g_sound_player[1],0);
+        }
     }
 }
 
 int Player::Get_player_dmg(Bullet* t_bullet)
 {
-    if(t_bullet->Get_bullet_type()==Bullet::FIRE_BULLET) return (15+power_level_fire*5);
-    return (10+power_level_water*5);
+    if(t_bullet->Get_bullet_type()==Bullet::FIRE_BULLET) return (15+attack_bonus+power_level_fire*5);
+    return (10+attack_bonus+power_level_water*5);
 }
