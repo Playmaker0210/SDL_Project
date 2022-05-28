@@ -35,6 +35,18 @@ private:
      int x_pos, y_pos;
 };
 
+class Buff : public baseObject
+{
+public:
+    Buff();
+    ~Buff();
+    void SetPos(const int& x, const int& y){x_pos=x; y_pos=y;}
+    void Show(SDL_Renderer* screen, bool is_show);
+    void Init(SDL_Renderer* screen, int type);
+    bool is_show;
 
+private:
+     int x_pos, y_pos;
+};
 
 #endif // PLAYERSTAT_H_INCLUDED
