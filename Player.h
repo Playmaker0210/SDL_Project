@@ -23,7 +23,8 @@
 #define STAR 17
 #define WATER 18
 #define FIRE 19
-
+#define SHIELD 20
+#define BOOK 21
 
 class Player : public baseObject
 {
@@ -36,6 +37,9 @@ public:
     int mana;
     int score;
     int playing;
+    bool shield;
+    bool book;
+    int attack_bonus;
     enum WalkType
     {
         WALK_NONE = -1,
