@@ -31,7 +31,8 @@ const int RENDER_DRAW_COLOR = 255;
 #define MAX_MAP_X 400
 #define MAX_MAP_Y 10
 #define BLANK_TILE 0
-
+#define FIRST_POS 390
+#define SECOND_POS 430
 
 struct Map
 {
