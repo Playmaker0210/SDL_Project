@@ -138,7 +138,11 @@ std::vector<Threats*> MakeThreats()
 // choi game
 bool GameProcess()
 {
-    int last=100000;
+    int last=1000000;
+    int last_shield=1000000;
+    int last_book=1000000;
+    bool have_shield=false;
+    bool have_book=false;
     std::vector<Threats*> MakeThreats();
     bool Quit=false;
     Timer fpsTimer;
@@ -166,6 +170,10 @@ bool GameProcess()
     player_power[0].SetPos(200,0);
     player_power[1].Init(gameScreen, 2);
     player_power[1].SetPos(300,0);
+
+    Buff player_buff[2];
+    player_buff[0].Init(gameScreen, 1);
+    player_buff[1].Init(gameScreen, 2);
 
     std::vector <Threats*> list_threats = MakeThreats();
 
@@ -298,7 +306,7 @@ bool GameProcess()
                         bCol1=SDLGeneralFunc::CheckCollision(tmp_bullet->GetRect(), player_rect);
                         if(bCol1)
                         {
-                            player_.health= player_.health-tmp_threats->damage < 0 ? 0 : player_.health-tmp_threats->damage;
+                            if(player_.shield==false) player_.health= player_.health-tmp_threats->damage < 0 ? 0 : player_.health-tmp_threats->damage;
                             tmp_bullet->Set_is_move(false);
                             break;
                         }
@@ -412,6 +420,37 @@ bool GameProcess()
             player_.mana=player_.mana+10<150 ? player_.mana+10 : 150;
             last=gameTime;
         }
+        if(player_.shield==true&&have_shield==false)
+        {
+            last_shield= gameTime;
+            have_shield=true;
+            if(have_book) player_buff[1].SetPos(SECOND_POS, 0);
+            else player_buff[1].SetPos(FIRST_POS, 0);
+        }
+        if(player_.shield==true&&last_shield-gameTime==5)
+        {
+            have_shield=false;
+            player_.shield=false;
+            last_shield=1000000;
+            player_buff[1].SetPos(0,0);
+        }
+        if(player_.book==true&&have_book==false)
+        {
+            last_book= gameTime;
+            have_book=true;
+            if(have_shield) player_buff[0].SetPos(SECOND_POS, 0);
+            else player_buff[0].SetPos(FIRST_POS, 0);
+        }
+        if(player_.book==true&&last_book-gameTime==5)
+        {
+            have_book=false;
+            player_.book=false;
+            player_.attack_bonus=0;
+            last_book=1000000;
+            player_buff[1].SetPos(0,0);
+        }
+        player_buff[0].Show(gameScreen, player_.book);
+        player_buff[1].Show(gameScreen, player_.shield);
         std::string str_val= std::to_string(player_.mana);
         gTime+= str_val;
         manaText.SetText(gTime);
