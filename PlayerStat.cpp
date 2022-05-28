@@ -27,7 +27,7 @@ void PlayerStat::Init(SDL_Renderer* screen)
 
 void PlayerStat::Show(SDL_Renderer* screen)
 {
-    for(int i=0;i<pos_list.size();i++)
+    for(int i=0; i<pos_list.size(); i++)
     {
         rect_.x=pos_list.at(i);
         rect_.y=0;
@@ -72,4 +72,32 @@ void PlayerPower::Show(SDL_Renderer* screen)
     rect_.x=x_pos;
     rect_.y=y_pos;
     Render(screen);
+}
+
+Buff::Buff()
+{
+    x_pos=0;
+    y_pos=0;
+}
+
+Buff::~Buff()
+{
+
+}
+
+void Buff::Init(SDL_Renderer* screen, int type)
+{
+    bool ret;
+    if(type==1) ret=LoadImage("Images//staff.png",screen);
+    else ret=LoadImage("Images//shield.png",screen);
+}
+
+void Buff::Show(SDL_Renderer* screen, bool is_show)
+{
+    if(is_show==true)
+    {
+        rect_.x=x_pos;
+        rect_.y=y_pos;
+        Render(screen);
+    }
 }
